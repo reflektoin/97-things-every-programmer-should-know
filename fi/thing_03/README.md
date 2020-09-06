@@ -1,0 +1,17 @@
+# Kysy "Mitä Käyttäjä Tekisi?" (Sinä Et Ole Käyttäjä)
+
+Meillä kaikilla on taipumus olettaa, että muut ajattelevat samalla tavoin kuin me. Mutta he eivät tee niin. Psykologit kutsuvät tätä yksimielisyysharhaksi. Kun ihmiset ajattelevat tai toimivat eri tavoin kuin me, me todennäköisesti leimaamme heidät (alitajuisesti) jollain tapaa viallisiksi.
+
+Tämä harha selittää, miksi ohjelmoijien on vaikea asettua käyttäjien asemaan. Käyttäjät eivät ajattele kuin ohjelmoijat. Ensimmäiseksi, he käyttävät tietokoneita paljon vähemmän. He eivät tiedä, eikä heitä kiinnosta miten tietokone toimii. Tämä tarkoittaa, ettei heillä ole ohjelmoijien omaamia ongelmanratkaisutapoja. He eivät tunnista kaavoja tai vihjeitä, joita ohjelmoijat hyödyntävät työskennellessään käyttöliittymän kanssa, läpi tai ympäri.
+
+Paras tapa päästä perille miten käyttäjät ajattelevat on seurata heitä. Pyydä käyttäjää suorittamaan tehtävä käyttäen samankaltaista ohjelmaa, kuin sinä kehität. Varmista, että tehtävä on todellinen: "Summaa sarakkeiden numerot" on ok; "Laske viime kuun kulusi" on parempi. Vältä tehtäviä, jotka ovat liian spesifejä, kuten "Voitko valita nämä taulukon solut ja syöttää *SUMMA* kaavan alle?" — kysymys sisältää ison vihjeen. Pyri saamaan käyttäjä kertomaan hänen etenemisestään. Älä keskeytä. Älä koita auttaa. Kysy itseltäsi jatkuvasti "Miksi hän tekee niin?" ja "Miksi hän ei tee niin?"
+
+Ensimmäinen asia, jonka huomaat on että käyttäjät tekevät ydinasiat samalla tavoin. He koittavat suorittaa tehtävät samassa järjestyksessä — ja he tekevät samat virheet samoissa kohdissa. Sinun tulisi suunnitella tuon ydinkäyttäytymisen ympärille. Tämä eroaa suunnittelupalavereista, joissa yleensä kuunnellaa ihmisiä jotka sanovat "Entä jos käyttäjä haluaa...?" Tämä johtaa monimutkaisiin toiminnallisuuksiin ja epäselvyyteen, mitä käyttäjät haluavat. Käyttäjien seuraaminen poistaa tämän sekaannuksen.
+
+Tulet näkemään käyttäjien jäämisen jumiin. Kun sinä jäät jumiin, katsot ympärillesi. Kun käyttäjä jää jumiin, he kaventavat keskittymistään. Heidän on vaikeampi nähdä ratkaisuja muualla näytöllä. Se on yksi syy, miksi aputekstit ovat huono ratkaisu huonoon käyttöliittymäsuunnitteluun. Jos ohjeita tai neuvoja täytyy olla, sijoita ne ongelmakohdan viereen. Käyttäjän käyttäjän kapea keskittyminen on syynä siihen, miksi vihjetekstit ovat paljon hyödyllisempiä kuin apuvalikot.
+
+Käyttäjillä on tapana rämpiä läpi. He löytävät tavan joka toimii ja pysyvät siinä. Olkoon se kuinka mutkikas tahansa. On parempi tarjota yksi ilmeinen tapa tehdä asiat kuin kaksi tai kolme oikotietä.
+Tulet myös huomaamaan, että se mitä käyttäjät sanovat haluavansa, eroaa siitä mitä he oikeasti tekevät. Se on huolestuttavaa, koska normaali tapa kerätä käyttäjien vaatimukset on kysyä niitä heiltä. Tämän takia paras tapa kerätä vaatimukset on seurata käyttäjiä. Tunnin käyttäminen käyttäjien seuraamiseen antaa enemmän tietoa kuin päivän käyttäminen arvuutteluun, mitä he haluavat.
+You'll also find that there's a gap between what users say they want and what they actually do. That's worrying as the normal way of gathering user requirements is to ask them. It's why the best way to capture requirements is to watch users. Spending an hour watching users is more informative than spending a day guessing what they want.
+
+Alkuperäinen kirjoittaja [Giles Colborne](http://programmer.97things.oreilly.com/wiki/index.php/Giles_Colborne)
