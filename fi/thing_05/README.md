@@ -2,7 +2,7 @@
 
 Lainaus, jonka mielestäni kaikkien kehittäjien tulisi tietää ja pitää lähellä sydäntä:
 
-> *Tyylin, harmonian, ylvayden ja hyvän rytmin kauneus riippuu yksinkertaisuudesta.* — Platon
+> *Tyylin, harmonian, ylväyden ja hyvän rytmin kauneus riippuu yksinkertaisuudesta.* — Platon
 
 Tämä mielestäni summaa yhdessä lauseessa arvot, joita meidän ohjelmistokehittäjinä pitäisi tavoitella.
 
