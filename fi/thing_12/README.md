@@ -1,0 +1,18 @@
+# Koodi on suunnitelma(design)
+
+Kuvittele herääväsi huomenna ja kuulevasi, että rakennusala on tehnyt vuosisadan läpimurron. Miljoonat halvat robotit voivat valmistaa materiaaleja tyhjästä, minimaalisella energiankulutuksella ja ne voivat korjata itsensä. Ja mikä parempaa: Kun niille annetaan epämääräiset piirustukset, robotit pystyvät rakentamaan ne ilman ihmisten väliintuloa. Kaikki vähillä kustannuksilla.
+
+Voi vain kuvitella vaikutuksen rakennusalaan, mutta mitä tapahtuisi ylävirrassa(upstream)? Miten arkkitehtien ja suunnittelijoiden käyttäytyminen muuttuisi, jos rakentamisen kustannukset olisivat mitättömät? Nykyään fyysisiä ja tietokonemalleja testataan perusteellisesti ennen rakentamista. Tekisimmekö niin, jos rakentaminen olisi lähes ilmaista? Jos suunnitelma sortuu, pikkujuttu - selvitä vain mikä meni vikaan ja taianomaiset robotit rakentavat uuden. Sillä on monia muita seurauksia. Mallit ovat vanhentuneita, keskeneräiset suunnitelmat kehittyvät jatkuvalla rakentamisella ja parannuksilla kohti tavoitetta. Satunnaisen tarkkailijan saattaa olla hankala erottaa keskeneräinen suunnitelma valmiista tuotteesta.
+
+Kykymme ennustaa aikajanoja katoaa. Rakennuskustannukset on helpompi laskea kuin suunnittelun kustannukset - tiedämme arviolta kuinka paljon palkin asentaminen maksaa ja kuinka monta tarvitsemme. Kun ennustettavat tehtävät pienentyvät kohti nollaa, vaikeammin ennustattava suunnitteluun kuluva aika alkaa dominoida. Tulokset tuotetaan nopeammin, mutta luotettavat aikajanat lipuvat pois.
+
+Totta kai, kilpailun kaineet silti ovat voimassa. Kun rakentamisen kulut on poistettu, nopeasti suunnitelmat valmiiksi saavalla yrityksellä on etu markkinoilla. Suunnitelmien valmiiksi saaminen nopeasti on keskeisessä asemassa insinööritoimistoissa. Vääjäämättä, joku suunnittelua vähän ymmärtävä näkee vahvistamatattoman(unvalidated) version, tunnistaa nopean julkaisemisen markkinaedut ja sanoo "Tämä vaikuttaa riittävän hyvältä."
+
+Jotkut elämän ja kuoleman projektit ovat harkitsevaisempia(diligent), mutta monissa tapauksissa kuluttajat oppivat sietämään keskeneräisiä suunnitelmia(design). Yritykset voivat aina lähettää taikarobotteja 'paikkaamaan' heidän myymiään rikkinäisiä rakennuksia ja ajoneuvoja. Kaikki tämä johtaa hämmästyttävän epäintuitiiviseen johtopäätökseen: Meidän ainut tarkoituksemme oli rakennuskustannusten suuri vähentäminen ja lopputuloksena *laatu huononi*.
+
+Sen ei pitäisi yllättää meitä, että kyseinen tarina tapahtui ohjelmistoissa. Jos hyväksymme, että koodi on suunnitelma - luova prosessi mekaanisen sijaan - *ohjelmistokriisi* on selitetty. Meillä on nyt *suunnittelukriisi*: Laadun vaatiminen, validoidut suunnitelmat ylittävät kykymme luoda niitä. Paine käyttää keskeneräistä suunnitelmaa on suuri.
+It shouldn't surprise us the above story has played out in software(validated designs exceeds our capacity to create them). 
+
+Onneksi tämä malli myös tarjoaa vihjeitä parannuksiin. Fyysiset simulaatit vastaavat automaattista testausta; ohjelmiston suunnitelma ei ole valmis ennen kuin se on validoitu brutaalilla testipatteristolla. Jotta testit olisivat tehokkaampia, löydämme tapoja hallita isojen järjestelmian valtavaa tila-avaruutta(state space). parantuneet kielet ja suunnittelukäytännöt antavat toivoa. Lopuksi, on yksi väistämätön fakta: Hyvät suunnitelmat tuottavat hyvät suunnitelijat, jotka omistautuvat työnsä hallitsemiseen. Koodi ei eroa tästä.
+
+Alkuperäinen kirjoittaja [Ryan Brush](http://programmer.97things.oreilly.com/wiki/index.php/Ryan_Brush)
