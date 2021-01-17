@@ -1,0 +1,13 @@
+#Älä pelkää rikkoa asioita
+
+Kaikki työkokemusta omaavat ovat työskennelleet projektissa, jossa koodikanta on parhaimmillaankin epäilyttävä. Järjestelmä on huonosti jäsennelty(factored) ja yhden asian muuttaminen rikkoo siitä liittymättömän ominaisuuden. Aina modulia lisättäessä ohjelmoijan tavoite on muuttaa mahdollisimman vähän asioita ja jännittää tuotetta julkaistessa. Tämä on ohjelmistojen versio Jenga-pelistä ja on taattu katastrofi.
+
+Syy muutosten jännittämiseen on järjestelmän sairaus. Se tarvitsee lääkäriä, muuten sen tila pahenee. Tiedät jo, mikä järjestelmässä on vialla, mutta pelkäät rikkoa munat tehdäksesi omeletin. Kokenut kirurgi tietää, että viiltoja täytyy tehdä leikkauksessa, mutta taitava kirurgi myös tietää, että viillot ovat tilapäisiä ja parantuvat. Operaation lopputulos on alun kipujen arvoinen ja potilas parantuu entistä ehommaksi.
+
+Älä pelkää koodiasi. Mitä väliä jos jokin tilapäisesti rikkoontuu, kun muutat asioita? Lamaannuttava muutoksen pelko johti nykyiseen tilaan. Sijoittaminen refaktorointiin maksaa itsensä takaisin moneen kertaan projektisi elinkaaren aikana. Lisäetuna tiimisi kokemus sairaan järjestelmän kanssa työskentelystä tekee teistä asiantuntijoita, miten sen *pitäisi* toimia. Käytä tätä tietoa sen halveksimisen sijaan. Kenenkään ei pitäisi tarvita työskennellä vihaamansa järjestelmän kanssa.
+
+Määrittele uudelleen sisäiset rajapinnat, järjestele modulit uudelleen, refaktoroi copy-pastettu koodi ja yksinkertaista suunnittelua vähentämällä riippuvuuksia. Voit vähentää koodin monimutkaisuutta merkittävästi poistamalla rajatapaukset, jotka usein aiheutuvat väärin yhdistellyistä ominaisuuksista. Siirry hitaasti vanhasta rakenteesta uuteen, jatkuvasti testaten. Suuren refaktoroinnin toteuttaminen kertarysäyksellä tulee aiheuttamaan niin paljon ongelmia, että tulet harkitsemaan ponnistuksen lopettamista puolivälissä.
+
+Ole kirurgi, joka uskaltaa leikata sairaat osat pois, tehden tilaa parantumiselle. Asenne on tarttuvaa ja innostaa muita aloittamaan siivousprojektit, joita he ovat lykänneet. Pidä "hygienia" listaa tehtävistä, jotka tiimi kokee arvokkaiksi projektin kannalta. Vakuuta johto näiden tehtävien vaikutuksesta vähentää kuluja ja nopeuttaa tulevia julkaisuja(releases). Älä koskaan lopeta välittämästä koodin yleisestä "terveydestä".
+
+Alkuperäinen kirjoittaja [Mike Lewis](http://programmer.97things.oreilly.com/wiki/index.php/Mike_Lewis)
