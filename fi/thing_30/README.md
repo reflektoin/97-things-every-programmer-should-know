@@ -12,7 +12,7 @@ Prosessissa tapahtuva toisto vaatii automatisointia
 
 Monet ohjelmistotuotannon prosessit ovat toistuvia ja helposti automatisoitavissa. DRY-periaate pätee sekä näissä konteksteissa kuin sovelluksen lähdekoodissa. Manuaalinen testaus on hidasta, virhealtista ja hankala toistaa, joten automaattisia testipaketteja tulisi käyttää mahdollisuuksien mukaan. Ohjelmiston integrointi voi olla aikaa vievää ja virhealtista käsin suoritettuna, joten kokoonpanoprosessi(build process) pitäisi ajaa mahdollisimman usein, ideaalitapauksessa joka muutoksen yhteydessä(every check-in). Hankala manuaalinen prosessi tulisi automatisoida ja standardisoita, mikäli se on mahdollista. Tavoite on varmistaa, että on vain yksi tapa suorittaa tehtävä ja että se olisi mahdollisimman kivutonta.
 
-Toisto logiikassa vaatii absrahointia
+Toisto logiikassa vaatii abstrahointia
 --
 
 Toisto logiikassa voi ilmetä monin tavoin. Kopioi-ja-liitä *if-then* tai *switch-case* logiikka on yksi helpoimmista havaita ja korvata. Monien suunnittelumallien eksplisiittinen tavoite on vähentää tai poistaa sovelluslogiikan toistoa. Jos olio tyypillisesti vaatii useiden asioiden tapahtuneen ennen kuin sitä voidaan käyttää, tämä voidaan saavuttaa Abstract Factorylla tai Factory-metodilla. Jos oliosta on monia muunnelmia sen käyttäytymisessä, nämä käyttäytymiset voidaan lisätä käyttäen Strategy-mallia suuren *if-then* -rakenteen sijaan. Itse asiassa  suunnittelumallien muotoilu itsessään on yritys vähentää toistoa ongelmien ratkomisessa ja keskustella ratkaisutavoista. Tämän lisäksi, DRY:ta voidaan soveltaa rakenteisiin, kuten tietokanta-skeemoihin, josta syntyy normalisointi.
