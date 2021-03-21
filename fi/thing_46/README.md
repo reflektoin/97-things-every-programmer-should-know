@@ -1,14 +1,16 @@
-# Know Your Limits
+# Tiedä Rajasi
 
-> *"Man's got to know his limitations." — Dirty Harry*
+> *"Henkilön täytyy tietää rajansa."
+- Dirty Harry*
 
-Your resources are limited. You only have so much time and money to do your work, including the time and money needed to keep your knowledge, skills, and tools up-to-date. You can only work so hard, so fast, so smart, and so long. Your tools are only so powerful. Your target machines are only so powerful. So you have to respect the limits of your resources.
+Resurssisi ovat rajatut. Sinulla on tietty määrä aikaa ja rahaa tehdä työsi, sisältäen tarvitsemasi ajan ja rahan tietojesi, taitojesi ja työkalujesi kunnossapitämiseen. Voit tehdä töitä tietyn verran, tietyllä nopeudella ja älykkyydellä tietyn aikaa. Työkalusi ovat vain tietyn tehokkaita. Kohdekoneesi(target machines) ovat vain tietyn tehokkaita. Sinun täytyy kunnioittaa resurssiesi rajoitteita.
 
-How to respect those limits? Know yourself, know your people, know your budgets, and know your stuff. Especially, as a software engineer, know the space and time complexity of your data structures and algorithms, and the architecture and performance characteristics of your systems. Your job is to create an optimal marriage of software and systems.
+Kuinka kunnioitat/otat ne rajat huomioon? Tunne itsesi, tunne väkesi, tunne budjettisi ja tunne juttusi. Erityisesti, ohjelmistoinsinöörinä, tiedä tietorakenteidesi ja algoritmiesi tila- ja aikakompleksisuus(space and time complexity), ja järjestelmiesi arkkitehtuuri ja suorityskykypiirteet(characteristics). Työsi on luoda optimaalinen liitto ohjelmiston ja järjestelmien välillä.
 
-Space and time complexity are given as the function *O(f(n))* which for n equal the size of the input is the asymptotic space or time required as n grows to infinity. Important complexity classes for *f(n)* include *ln(n)*, *n*, *n ln(n)*, *n<sup>e</sup>*, and *e<sup>n</sup>*. As graphing these functions clearly shows, as *n* gets bigger *O(ln(n))* is ever so much smaller than *O(n)* and *O(n ln(n))*, which are ever so much smaller than *O(n<sup>e</sup>)* and *O(e<sup>n</sup>)*. As Sean Parent puts it, for achievable n all complexity classes amount to near-constant, near-linear, or near-infinite.
+Tila- ja aikakompleksisuus annetaan funktiona *O(f(n))*, jossa n:n ollessa syötteen koko on asymptoottinen tila tai aika vaaditaan kun n kasvaa äärettömään(which for n equal the size of the input is the asymptotic space or time required as n grows to infinity). Tärkeitä kompleksisuusluokkia funktiolle *f(n)* on muun muassa *ln(n)*, *n*, *n ln(n)*, *n<sup>e</sup>*, and *e<sup>n</sup>*. Funktioiden piirtäminen näyttää, kun *n* kasvaa *O(ln(n))* on pienempi kuin *O(n)* ja *O(n ln(n))*, mitkä ovat pienempiä(ever so much smaller) kuin *O(n<sup>e</sup>)* ja *O(e<sup>n</sup>)*. Kuten Sean Parent asian esittää, saavutettavalla n kaikille kompleksisuusluokille amount to near-constant, near-linear, or near-infinite.
 
 ![](http://programmer.97things.oreilly.com/wiki/images/c/c0/Clearly.jpeg)
+
 
 |              | access time      |   capacity |
 |--------------|-----------------:| ----------:|
@@ -21,15 +23,16 @@ Space and time complexity are given as the function *O(f(n))* which for n equal 
 | LAN          | 20 ms            | > 1 PB     |
 | internet     | 100 ms           | > 1 ZB     |
 
-Complexity analysis is in terms of an abstract machine, but software runs on real machines. Modern computer systems are organized as hierarchies of physical and virtual machines, including language runtimes, operating systems, CPUs, cache memory, random-access memory, disk drives, and networks. The first table shows the limits on random access time and storage capacity for a typical networked server.
+Kompleksisuusanalyysi tehdään abstraktin koneen mukaan, mutta ohjelmisto ajetaan oikealla koneella. Modernit tietokonejärjestelmät(computer systems) on organisoitu fyysisten ja virtuaalikoneiden hierarkiaksi, sisältäen language runtimes, käyttöjärjestelmät, suorittimet, välimuistit, RAMit, levymuistin, ja verkot. Ensimmäinen taulukko näyttää RAMin ja levytilan rajat tyypiliselle palvelimelle.
 
-Note that capacity and speed vary by several orders of magnitude. Caching and lookahead are used heavily at every level of our systems to hide this variation, but they only work when access is predictable. When cache misses are frequent the system will be thrashing. For example, to randomly inspect every byte on a hard drive could take 32 years. Even to randomly inspect every byte in RAM could take 11 minutes. Random access is not predictable. What is? That depends on the system, but re-accessing recently used items and accessing items sequentially are usually a win.
+Huomaa, että kapasiteetti ja nopeus vaihtelevat useita suuruusluokkia. Välimuistia ja lookaheadia(suomeksi*) käytetään järjestelmän jokaisella tasolla piilottaakseen tämän vaihtelun, mutta ne toimivat vain kun saanti(access) on ennustettavissa. Kun asia ei löydy välimuistista, järjestelmä hidastuu(thrashing). Esimerkiksi levyn satunnaisesti koko levyn tavujen tarkastelu kestäisi 32 vuotta. Jopa RAMin kaikkien tavujen satunnainen tutkiminen voisi kestää 11 minuuttia. Hajasaanti(random access) ei ole ennustettavissa. Mikä on? Se riippuu järjestelmästä, mutta äskettäin haetun uudelleenhaku(re-accessing recently used items) ja esineiden(item) haku (access) sarjassa(sequentially) ovat yleensä hyviä tapoja(are usually a win).
 
-Algorithms and data structures vary in how effectively they use caches. For instance:
-- Linear search makes good use of lookahead, but requires *O(n)* comparisons.
-- Binary search of a sorted array requires only *O(log(n))* comparisons.
-- Search of a van Emde Boas tree is *O(log(n))* and cache-oblivious.
+Algoritmit ja tietorakenteet hyödyntävät eriäviä määriä välimuistia. Esimerkiksi:
+- Lineaarinen haku hyödyntää lookaheadia(suomeksi...), mutta vaatii *O(n)* vertailua.
 
+- Järjestetyn taulukon(sorted array) binäärihaku vaatii vain *O(log(n))* vertailua.
+
+- van Emde Boas puun haku on *O(log(n))* ja eikä käytä välimuistia(is cache-oblivious).
 
 |Elements | Search time (ns)|       |         |
 |:--------|-----------:|-----------:|--------:|
@@ -40,10 +43,12 @@ Algorithms and data structures vary in how effectively they use caches. For inst
 | 4096    | 17000      | 320        | 160     |
 
 
-How to choose? In the last analysis, by measuring. The second table shows the time required to search arrays of 64-bit integers via these three methods. On my computer:
-- Linear search is competitive for small arrays, but loses exponentially for larger arrays.
-- van Emde Boas wins hands down, thanks to its predictable access pattern.
+Miten valita? Viimeisessä analyysissä, mittaamalla. Toinen taulu näyttää vaaditun ajan hakea 64-bittisiä kokonaislukuja taulukosta näillä kolmella tavalla. Minun koneellani:
+- Lineaarinen haku on kilpailukykyinen pienillä taulukoille, mutta häviää eksponentiaalisesti isoilla taulukoilla.
+- van Emde Boas voittaa hands down, kiitos sen ennustettavan pääsymallin(access pattern).
 
-> *"You pays your money and you takes your choice." — [Punch](http://www.nytimes.com/1988/02/28/magazine/on-language-you-pays-yer-money.html?pagewanted=all)*
+> *"You pays your money and you takes your choice."
 
-By [Greg Colvin](http://programmer.97things.oreilly.com/wiki/index.php/Greg_Colvin)
+ — [Punch](http://www.nytimes.com/1988/02/28/magazine/on-language-you-pays-yer-money.html?pagewanted=all)*
+
+Alkuperäinen kirjoittaja [Greg Colvin](http://programmer.97things.oreilly.com/wiki/index.php/Greg_Colvin)
