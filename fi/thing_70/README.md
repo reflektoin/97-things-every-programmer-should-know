@@ -1,0 +1,13 @@
+# Lue Koodia
+
+Me ohjelmoijat olemme kummallisia otuksia. Me rakastamme kirjoittaa koodia. Mutta koodin lukemista emme kummemmin harrasta. Loppujen lopuksi koodin kirjoittaminen on paljon hauskempaa ja koodin lukeminen on vaikeaa, joskus lähes mahdotonta. Toisten koodia on vielä vaikeampi lukea. Ei välttämättä siksi, että muiden koodi olisi huonoa, vaan koska he ajattelevat ja ratkovat ongelmia eri tavalla kuin sinä. Mutta oletko koskaan miettinyt, että muiden koodin lukeminen voisi parantaa omaa koodiasi?
+
+Seuraaavan kerran koodia lukiessasi, pysähdy ajattelemaan hetkeksi. Onko tämä koodi helppoa vai vaikeaa lukea? Jos se on vaikeaa, niin miksi niin on? Onko se huonosti muotoiltu? Onko nimeäminen vaihtelevaa tai epäloogista? Onko useita asioita yhdistetty samaan koodin osaan? Ehkä valittu kieli estää koodin luettavuutta? Koita oppia muiden virheistä, jotta välttäisit samat virheet omassa koodissasi. Saatat saada muutaman yllätyksen. Esimerkiksi riippuuvuuksien rikkomisen tekniikat saattavat olla hyviä löyhempään kytkentään, mutta joskus ne tekevät koodista vaikeampaa lukea. Ja mitä jotkut kutsuvat *tyylikkääksi koodiksi*, toisetkutsuvat *lukukelvottomaksi*.
+
+Jos koodi on helppolukuista, pysähdy ja katso, onko siinä jotain hyödyllistä opittavaa. Ehkä siinä käytetään suunnittelumallia, jota et tiedä, tai jonka toteuttamisen kanssa olet kamppaillut. Ehkä ne ovats sinun metodeja lyhyempiä ja nimet kuvaavampia. Jotkut avoimen lähdekoodin projektit ovat täynnä hyviä esimerkkejä luettavan koodin kirjoittamisesta, kun taas toiset sisältävät esimerkkejä vältettävistä asioista. Ota työkopio (checkout) heidän koodistaan ja selaa sitä.
+
+Vanhan koodin lukeminen projektista, jossa et tällä hetkellä työskentele, voi olla valaisevaa kokemus. Aloita vanhimmalla koodillasi ja palaa takaisin nykyhetkeä kohti. Tulet luultavasti huomaamaan, ettei sitä ole yhtä helppo lukea, kuin sen kirjoittamishetkellä. Aiempi koodisi saattaa sisältää myös noloa viihdearvoa, joka muistuttaa kaikista niistä asioista, joita sanoit kun olit viime iltana pubissa. Katso miten olet kehittänyt taitojasi vuosien varrella, se voi olla erittäin motivoivaa. Huomioi, millä alueilla koodisi on vaikealukuista, ja mieti kirjoitatko koodia edelleen samalla tavalla.
+
+Joten ensi kerran kun, koet tarvetta parantaa ohjelmointitaitojasi, älä lue toista kirjaa. Lue koodia.
+
+Kirjoittanut [Karianne Berg](http://programmer.97things.oreilly.com/wiki/index.php/Karianne_Berg)

@@ -1,0 +1,19 @@
+# Ammattimaien ohjelmoija(professional programmer)
+
+Minkälainen on ammattimainen ohjelmoija?
+
+Yksi tärkeimmistä ammattimaisen ohjelmoijan ominaisuuksista on *henkilökohtainen vastuu*. Ammattimaiset ohjelmoijat kantavast vastuun urastaan, arvioistaan, aikataulullisista sitoumuksistaa, virheistään ja ammattitaidostaan. Ammattimainen ohjelmoija ei siirrä vastuuta muille.
+
+- Jos olet ammattilainen, silloin *sinä* olet vastuussa urastasi. *Sinä* olet vastuussa lukemisesta ja oppimisesta. Sinä olet vastuussa pysymisestä ajan tasalla alasta ja teknologioista. Liian monet ohjelmoijat kokevat heidän kouluttautumisensa olevan työnantajan vastuulla. Pahoittelen, mutta se on täysin väärin. Luuletko lääkäreiden käyttäytyvän sillä tavoin? Luuletko asianajajien käyttäytyvän sillä tavoin? Ei, he kouluttavat itseään omalla ajallaan, omilla rahoillaan. He käyttäjät suuren osan vapaa-ajastaan aikakausilehtien lukemiseen. He pitävät itsensä ajan tasalla. Niin meidänkin täytyy. Sinun ja työnantajasi suhde on kerrottu työsopimuksessasi. Lyhyesti: He lupaavat maksaa sinulle ja sinä lupaat tehdä hyvää työtä.
+
+- Ammattilaiset ottavat vastuun kirjoittamastaan koodista. He eivät julkaise koodia, elleivät he tiedä sen toimivan. Ajattele sitä hetki. Miten voimme kuvitella olevamme ammattimaisia, jos olemme valmiit julkaisemaan koodia, josta emme ole varmoja? Ammattimaiset ohjelmoijat odottavat ettei laadunvarmistus löydä *mitään*, koska *he eivät julkaise koodia, jota ei ole perusteellisesti testattu*. Tottakai laadunvarmistus löytää jotain vikoja, koska kukaan ei ole täydellinen. Mutta ammattilaisina meidän asenteemme tulee olla, ettemme jätä laadunvarmistuksen löydettäväksi mitään.
+
+- Ammattilaiset ovat tiimipelaajia. He ottavat vastuun koko tiimin työstä, eivät ainoastaan työstään. He auttavat muita, opettavat muita, oppivat muilta ja turvaavat(cover, tekee töisen työt, vuoron?) toisiaan tarpeen tullen. Kun tiimin jäsen kaatuu, muut tulevat avuksi tietäen, että joku päivä he itse tarvitsevat apua.
+
+- Ammattilaiset eivät siedä pitkiä vikalistoja. Iso vikalista on huolimatonta. Tuhannet viat virheenseurantakannassa ovat huolimattomuuden tragedia. Tosiaankin, suurimmassa osassa projekteista pelkkä virheenseurantaohjelmiston tarve on oire huolimattomuudesta. Ainoastaan isoimmilla järjestelmillä pitäisi olla, niin isot vikalistat, että niiden hallintaan tarvitaan automaatiota.
+
+- Ammattilaiset eivät tee sotkua. He ovat ylpeitä työn laadustaan. He pitävät koodinsa siistinä, selkeärakenteisena ja helppolukuisena. He seuraavat sovittuja standardeja ja parhaita käytäntöjä. He eivät *koskaan* kiirehdi. Kuvittele kokevasi ruumiista irtautumisen kokemus, jossa katsot lääkärin suorittavan avosydänleikkausta *sinulle*. Lääkärillä on *deadline* (kirjaimellisessa merkityksessä). Hänen täytyy olla valmis, ennen kuin sydän-keuhkokone vahingoittaa verisolujasi liikaa. Miten haluat hänen toimivan? Haluatko hänen toimivan tyypillisen ohjelmistokehittäjän tapaan, kiirehtien ja sotaten? Haluatko hänen sanovan: "Palaan myöhemmin ja korjaan tämän sitten?" Vai haluatko hänen noudattavan koulutustaan, ottaen aikansa, varmana siitä, että hänen valitsemansa lähestymistapan järkevin. Haluatko sotkun vai ammattimaisuutta?
+
+Ammattilaiset ovat vastuullisia. He ottavat vastuun omista uristaan. He ottavat vastuun koodinsa toimivuudesta. He ottavat vastuun työnsä laadusta. He eivät hylkää periaatteitaan määräaikojen häämöttäessä. Tosiaan, paideiden kasvaessa, ammattilaiset pitävät entistä tiukemmin oikeiksi tietämistään opeista.
+
+Kirjoittanut [Uncle Bob](http://programmer.97things.oreilly.com/wiki/index.php/Uncle_Bob)

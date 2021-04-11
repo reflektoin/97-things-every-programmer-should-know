@@ -1,0 +1,16 @@
+# Tee Rajapinnoista Helppoja Käyttää Oikein ja Vaikeiksi Käyttää Väärin
+
+Yksi ohjelmistokehityksen yleisimmistä tehtävistä on määrittää rajapinta. Rajapintoja esiintyy absraktio ylimmällä tasolla (käyttöliittymät), alimmalla tasolla (funktioiden rajapinnat) ja välitasoilla (luokkien rajaipnnat, kirjastojen rajapinnat, jne.). Riippumatta siitä määritätkö loppukäyttäjien tapaa käyttää järjestelmää, kehitätkö APIa kehittäjien kanssa tai määrität luokan funktioita yksityisiksi, rajapintojen suunnittelu on tärkeä osa työtäsi. Tehdessäsi sen hyvin, rajapintojasi on ilo käyttää ja parannat muiden tuottavuutta. Jos teet sen huonosti rajapintasi aiheuttavat turhautumista ja virheitä.
+
+Hyvät rajapinnat ovat:
+
+- **Helppoja käyttää oikein.** Hyvin suunniteltua rajapinata käytetään lähes aina oikein, koska se aiheuttaa vähiten vavaa. Graafisessa käyttöliittymässä(Graphical User Interface, GUI), he klikkaavat lähes aina oikeaa ikonia, painiketta tai menun vaihtoehtoa, koska se on itsestään selvää ja helppoa tehdä. Ohjelmointirajapinnassa(Application Programming Interface, API) he lähes aina välittävät oikeat parametrit oikeilla arvoilla, koska se on luonnollisinta. Rajapinnat, joita on helppo käyttää oikein *vain toimivat.*
+- **Vaikea käyttää väärin.** Hyvät rajapinnat ennakoivat virheet, joita ihmiset saattavat tehdä ja tekevät niistä hankalia - ideaalitilanteessa mahdottomia - tehdä. GUI saattaa estää tai opistaa käytöstä komentoja, jotka ei ole järkevä käyttää nykyisessä kontekstissa, esimerkiksi jos API poistaisi argumenttien järjestys-ongelmat sallimalla parametrien välityksen mielivaltaisessa järjestyksessä.
+
+Hyvä tapa suunnitella helppokäyttöisiä rajapintoja on harjoittaa niitä ennen niiden olemassaoloa. Mallinna GUI - mahdollisesti valkotaululle tai käyttäen kortteja pöydällä - ja leiki niillä ennen koodin kirjoittamisat. Kirjoita API-kutsuja ennen funktioiden määrittelyä. Käy läpi yleiset käyttötapaukset ja määritä miten sinä *haluat* rajapinnan toimivan. Mitä sinä *haluat* pystyä klikkaamaan? Mitä sinä *haluat* pystyä välittämään? Helppokäyttöiset rajapinnat vaikuttavat luonnollisilta, koska ne sallivat sinun tehdä mitä haluat. Keksit sellaiset rajapinnat todennäköisemmin, jos kehität niitä käyttäjän näkökulmasta. (Tämä näkökulma on yksi testi-lähtöisen ohjelmoinnin vahvuuksia.)
+
+Rajapintojen tekeminen vaikeaksi käyttää väärin vaatii kahta asiaa. Ensiksi, sinun täytyy ennakoida käyttäjän virheet ja löytää tapoja välttää ne. Toiseksi, sinun täytyy huomioida rajapinnan väärinkäytökset varhaisessa julkaisussa ja muokata rajapintaa - kyllä, muokata rajapintaa! - välttääksesi kyseiset virheet. Paras tapa välttää virheellinen käyttö on sen mahdottomaksi tekeminen. Jos käyttäjät haluavat peruuttaa peruuttamattoman toiminnon, yritä tehdä toiminnosta peruutettava. Jos he välittävät vääriä arvoja APIlle, tee parhaasi muokataksesi APIa ottamaan vastaan arvot, jotka käyttäjä haluaa välittää.
+
+Muista ennen kaikkea, että rajapinnat ovat olemassa helpottaakseen niiden käyttäjiä, ei niiden toteuttajia.
+
+Kirjoittanut [Scott Meyers](http://programmer.97things.oreilly.com/wiki/index.php/Scott_Meyers)
